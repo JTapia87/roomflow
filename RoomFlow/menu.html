@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ROOMFLOW — Menú Principal</title>
+  <link rel="stylesheet" href="../Componentes/css/styles.css" />
+</head>
+<body>
+  <header class="menu-header">
+    <h1 class="brand">ROOMFLOW</h1>
+    <button class="btn-logout" onclick="cerrarSesion()">Cerrar Sesión</button>
+  </header>
+
+  <main class="menu-layout">
+    <section class="menu-grid">
+      <div class="menu-card">
+        <div class="menu-icon">🎫</div>
+        <h2>Tickets</h2>
+        <p>Gestión de tickets y solicitudes</p>
+        <a href="tickets.html" class="btn-acceder">Acceder</a>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-icon">📅</div>
+        <h2>Reservas</h2>
+        <p>Gestión de reservas de recursos</p>
+        <a href="reservas.html" class="btn-acceder">Acceder</a>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-icon">👤</div>
+        <h2>Usuarios</h2>
+        <p>Administración de usuarios</p>
+        <a href="usuarios.html" class="btn-acceder">Acceder</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="../Componentes/js/menu.js"></script>
+</body>
+</html>

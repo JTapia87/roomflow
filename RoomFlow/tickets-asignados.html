@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ROOMFLOW — Tickets Asignados</title>
+  <link rel="stylesheet" href="../Componentes/css/styles.css" />
+</head>
+<body>
+  <header class="menu-header">
+    <a href="tickets.html" class="btn-volver">← Volver a Gestión de Tickets</a>
+  </header>
+
+  <main class="list-layout">
+    <h2>Gestión de Tickets Asignados</h2>
+    <table class="ticket-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Tipo</th>
+          <th>Descripción</th>
+          <th>Edificio</th>
+          <th>Espacio</th>
+          <th>Prioridad</th>
+          <th>Estado</th>
+          <th>Actualizar</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="ticket-table-body"></tbody>
+    </table>
+  </main>
+
+  <script src="../Componentes/js/tickets.js"></script>
+</body>
+</html>
