@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!--
+    Vista: Crear Ticket
+    - Formulario con id `ticket-form` y campos clave: `edificio`, `espacio`, `tipo`, `descripcion`, `prioridad`, `archivo`.
+    - El script `../Assets/js/tickets.js` gestiona el guardado en localStorage y la redirección a confirmación.
+    - Mantener los ids de los inputs para que el JS pueda leerlos correctamente.
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ROOMFLOW — Crear Ticket</title>
+  <link rel="stylesheet" href="../Assets/css/styles.css" />
+</head>
+<body>
+  <header class="menu-header">
+    <a href="tickets.html" class="btn-volver">← Volver a Gestión de Tickets</a>
+  </header>
+
+  <main class="form-layout">
+    <form id="ticket-form" enctype="multipart/form-data">
+      <h2>Crear Ticket</h2>
+
+      <div class="field">
+        <label for="edificio">Edificio *</label>
+        <select id="edificio" required>
+          <option value="">Seleccione</option>
+          <option value="A">Edificio A</option>
+          <option value="B">Edificio B</option>
+          <option value="C">Edificio C</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="espacio">Espacio *</label>
+        <input type="text" id="espacio" placeholder="Ej. Sala 204" required />
+      </div>
+
+      <div class="field">
+        <label for="tipo">Tipo de requerimiento *</label>
+        <select id="tipo" required>
+          <option value="">Seleccione</option>
+          <option value="infraestructura">Infraestructura</option>
+          <option value="tecnología">Tecnología</option>
+          <option value="limpieza">Limpieza</option>
+          <option value="soporte">Soporte</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="descripcion">Descripción del problema *</label>
+        <textarea id="descripcion" rows="4" placeholder="Describa el problema o solicitud" required></textarea>
+      </div>
+
+      <div class="field">
+        <label for="prioridad">Prioridad *</label>
+        <select id="prioridad" required>
+          <option value="">Seleccione</option>
+          <option value="alta">Alta</option>
+          <option value="media">Media</option>
+          <option value="baja">Baja</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="archivo">Adjuntar archivo (opcional)</label>
+        <input type="file" id="archivo" accept=".jpg,.png,.pdf,.docx" />
+      </div>
+
+      <button type="submit" class="btn-primary">Enviar Ticket</button>
+      <div class="feedback" id="ticket-feedback"></div>
+    </form>
+  </main>
+
+  <script src="../Assets/js/tickets.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!--
+    Vista: Menú Principal
+    - Panel con accesos a Reservas, Tickets, Usuarios y Dashboard.
+    - Botón de cerrar sesión invoca la función global `cerrarSesion()` definida en `../Assets/js/menu.js`.
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ROOMFLOW — Menú Principal</title>
+  <link rel="stylesheet" href="../Assets/css/styles.css" />
+</head>
+<body>
+  <header class="menu-header">
+    <h1 class="brand">ROOMFLOW</h1>
+    <button class="btn-logout" onclick="cerrarSesion()">Cerrar Sesión</button>
+  </header>
+
+  <main class="menu-layout">
+    <section class="menu-grid">
+      <div class="menu-card">
+        <div class="menu-icon">📅</div>
+        <h2>Reservas</h2>
+        <p>Gestión de reservas de recursos</p>
+        <a href="reservas.html" class="btn-acceder">Acceder</a>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-icon">🎫</div>
+        <h2>Tickets</h2>
+        <p>Gestión de tickets y solicitudes</p>
+        <a href="tickets.html" class="btn-acceder">Acceder</a>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-icon">👤</div>
+        <h2>Usuarios</h2>
+        <p>Administración de usuarios</p>
+        <a href="usuarios.html" class="btn-acceder">Acceder</a>
+      </div>
+    </section>
+  </main>
+  <main class="menu-layout">
+    <section class="menu-grid">
+      <div class="menu-card">
+        <div class="menu-icon">📊</div>
+        <h2>Inteligencia de Negocio</h2>
+        <p>Reporte de Incidencia Técnica en Aula</p>
+        <a href="inteligencia-de-negocio.html" class="btn-acceder">Acceder</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="../Assets/js/menu.js"></script>
+</body>
+</html>

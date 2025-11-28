@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!--
+    Vista: Página de Login
+    - Formulario con id `login-form` y campos `usuario`, `contrasena`.
+    - Feedback en `#feedback`; errores de campo en `#usuario-error` y `#contrasena-error`.
+    - Usa `../Assets/js/app.js` para validación local y simulación de autenticación (demo: admin/admin123).
+    - Mantener los atributos `id` y `name` del formulario para compatibilidad con el script.
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ROOMFLOW — Sistema de Gestión de Salas y Tickets</title>
+  <meta name="description" content="Login — ROOMFLOW: Sistema de Gestión de Salas y Tickets" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Assets/css/styles.css" />
+</head>
+<body>
+  <main class="layout">
+    <section class="card" role="form" aria-labelledby="rf-title">
+      <div class="card-header">
+        <h1 id="rf-title" class="brand">ROOMFLOW</h1>
+        <p class="subtitle">Sistema de Gestión de Salas y Tickets</p>
+      </div>
+
+      <form id="login-form" novalidate>
+        <div class="field">
+          <label for="usuario">Usuario</label>
+          <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario" autocomplete="username" required />
+          <small class="error" id="usuario-error" aria-live="polite"></small>
+        </div>
+
+        <div class="field">
+          <label for="contrasena">Contraseña</label>
+          <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña" autocomplete="current-password" required />
+          <small class="error" id="contrasena-error" aria-live="polite"></small>
+        </div>
+
+        <button type="submit" class="btn-primary" id="btn-ingresar">Ingresar</button>
+
+        <div class="demo">
+          <span class="demo-label">Demo:</span>
+          <span class="demo-cred">usuario: <code>admin</code></span>
+          <span class="demo-cred">contraseña: <code>admin123</code></span>
+        </div>
+
+        <div class="feedback" id="feedback" aria-live="polite" role="status"></div>
+      </form>
+    </section>
+  </main>
+
+  <script src="../Assets/js/app.js"></script>
+</body>
+</html>
+
+

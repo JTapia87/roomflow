@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!--
+    Vista: Gestión de Reservas (menu)
+    - Página con accesos a crear nueva reserva y a la aprobación de reservas.
+    - Las vistas específicas (`nueva-reserva.html`, `aprobacion-reservas.html`) contienen la lógica JS respectiva.
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ROOMFLOW — Gestión de Reservas</title>
+  <link rel="stylesheet" href="../Assets/css/styles.css" />
+</head>
+<body>
+  <header class="menu-header">
+    <a href="menu.html" class="btn-volver">← Volver al Menú Principal</a>
+  </header>
+
+  <main class="menu-layout">
+    <section class="menu-grid">
+      <div class="menu-card">
+        <div class="menu-icon">📅</div>
+        <h2>Nueva Reserva</h2>
+        <p>Reservar sala y equipo</p>
+        <a href="nueva-reserva.html" class="btn-acceder">Acceder</a>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-icon">✅</div>
+        <h2>Aprobación de Reservas</h2>
+        <p>Gestionar reservas pendientes</p>
+        <a href="aprobacion-reservas.html" class="btn-acceder">Acceder</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!--
+    Vista: Aprobación de Reservas
+    - Muestra las reservas pendientes en el <tbody id="reserva-table-body">.
+    - Lógica de carga/validación/aprobación en `../Assets/js/reservas.js`.
+    - No modificar el id del tbody si se desea mantener la funcionalidad.
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ROOMFLOW — Aprobación de Reservas</title>
+  <link rel="stylesheet" href="../Assets/css/styles.css" />
+</head>
+<body>
+  <header class="menu-header">
+    <a href="reservas.html" class="btn-volver">← Volver a Gestión de Reservas</a>
+  </header>
+
+  <main class="list-layout">
+    <h2>Reservas Pendientes</h2>
+    <table class="ticket-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Recurso</th>
+          <th>Fecha</th>
+          <th>Hora</th>
+          <th>Motivo</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody id="reserva-table-body"></tbody>
+    </table>
+  </main>
+
+  <script src="../Assets/js/reservas.js"></script>
+</body>
+</html>
