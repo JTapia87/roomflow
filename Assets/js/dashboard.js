@@ -105,6 +105,15 @@ function calcularKPIs(fechaFiltro) {
   return { filtrados };
 }
 
+
+// Logout
+
+function cerrarSesion() {
+  alert("Sesión cerrada.");
+  // Redirige al index (página de login)
+  window.location.href = "index.html";
+}
+
 function agregarInteraccionBarra(ctx, labels, onClickSala) {
   // Interacción: clic en barra → muestra detalle de esa sala/edificio
   ctx.canvas.onclick = (evt) => {

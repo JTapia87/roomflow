@@ -49,6 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
         ticketList.appendChild(li);
       });
     }
+    
+
 
     if (tableBody) {
       tableBody.innerHTML = "";
@@ -201,3 +203,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // Inicializar listado al cargar la página
   loadTickets();
 });
+
+// Logout
+
+function cerrarSesion() {
+  alert("Sesión cerrada.");
+  // Redirige al index (página de login)
+  window.location.href = "index.html";
+}

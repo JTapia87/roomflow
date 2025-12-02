@@ -10,7 +10,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // Genera un ID incremental para cada reserva empezando por 5001
   // - Guarda el último ID en localStorage bajo "roomflow_last_reserva".
   function getNextReservaID() {
-    const last = parseInt(localStorage.getItem("roomflow_last_reserva") || "5000", 10);
+    const last = parseInt(
+      localStorage.getItem("roomflow_last_reserva") || "5000",
+      10
+    );
     const next = last + 1;
     localStorage.setItem("roomflow_last_reserva", next.toString());
     return next;
@@ -42,10 +45,14 @@ document.addEventListener("DOMContentLoaded", () => {
           <td>${r.motivo}</td>
           <td>${r.estado}</td>
           <td>
-            ${r.estado === "pendiente" ? `
+            ${
+              r.estado === "pendiente"
+                ? `
               <button onclick="validarReserva(${i}, 'aprobada')">Aprobar</button>
               <button onclick="validarReserva(${i}, 'rechazada')">Rechazar</button>
-            ` : "-"}
+            `
+                : "-"
+            }
           </td>
         `;
         tableBody.appendChild(row);
@@ -84,3 +91,11 @@ document.addEventListener("DOMContentLoaded", () => {
   // Inicializar listado al cargar la página
   loadReservas();
 });
+
+    // Logout
+
+    function cerrarSesion() {
+      alert("Sesión cerrada.");
+      // Redirige al index (página de login)
+      window.location.href = "index.html";
+    }

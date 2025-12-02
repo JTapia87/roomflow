@@ -52,6 +52,14 @@ async function login(email, password) {
   return data;
 }
 
+// Logout
+
+function cerrarSesion() {
+  alert("Sesión cerrada.");
+  // Redirige al index (página de login)
+  window.location.href = "index.html";
+}
+
 // 🚀 Manejo de envío
 form.addEventListener("submit", async (e) => {
   e.preventDefault();

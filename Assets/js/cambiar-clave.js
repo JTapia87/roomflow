@@ -25,6 +25,15 @@ function clearMessages() {
   feedback.className = "feedback";
 }
 
+
+// Logout
+
+function cerrarSesion() {
+  alert("Sesión cerrada.");
+  // Redirige al index (página de login)
+  window.location.href = "index.html";
+}
+
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
   clearMessages();

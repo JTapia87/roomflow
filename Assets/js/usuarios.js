@@ -41,6 +41,8 @@ async function cargarOpciones() {
   });
 }
 
+
+
 // Crear usuario
 btnCrear.addEventListener("click", async () => {
   const rut = form.rut.value.trim();
@@ -142,5 +144,15 @@ form.addEventListener("submit", async (e) => {
   }
 });
 
+
+
 // Inicializar
 cargarOpciones();
+
+// Logout
+
+window.cerrarSesion = function () {
+  alert("Sesión cerrada.");
+  // Redirige al index (página de login)
+  window.location.href = "index.html";
+};
